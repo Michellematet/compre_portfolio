@@ -13,13 +13,35 @@ body {
 header {
     text-align: center;
     padding: 50px 20px;
-    background: rgba(255, 255, 255, 0.8);
+    background: url('headerbackground.jpg') no-repeat center center;
+    background-size: cover;
     border-bottom: 2px solid #ffb3d9;
+    position: relative;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 1;
+}
+
+.profile {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 }
 
 .profile-img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     border: 5px solid #ffb3d9;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -30,15 +52,20 @@ header {
     transform: scale(1.05);
 }
 
+.profile-text {
+    text-align: left;
+}
+
 h1 {
     font-size: 2.5em;
-    color: #ff69b4;
-    margin: 20px 0 10px;
+    color: #ffffff;
+    margin: 0 0 10px;
 }
 
 header p {
     font-size: 1.2em;
-    color: #666;
+    color: #ffffff;
+    margin: 0;
 }
 
 main {
@@ -84,9 +111,16 @@ footer {
     h1 {
         font-size: 2em;
     }
+    .profile {
+        flex-direction: column;
+        gap: 20px;
+    }
     .profile-img {
-        width: 120px;
-        height: 120px;
+        width: 150px;
+        height: 150px;
+    }
+    .profile-text {
+        text-align: center;
     }
     main {
         padding: 20px 10px;
