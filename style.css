@@ -69,9 +69,12 @@ header p {
 }
 
 main {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
 }
 
 section {
@@ -124,6 +127,7 @@ footer {
     }
     main {
         padding: 20px 10px;
+        grid-template-columns: 1fr;
     }
     section {
         padding: 20px;
