@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(135deg, #ffe6f7, #e6f7ff);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom: 2px solid #ffb3d9;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #ffb3d9;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #ff69b4;
+    margin: 20px 0 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.9);
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #ff69b4;
+    border-bottom: 2px solid #ffb3d9;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-top: 2px solid #ffb3d9;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+    main {
+        padding: 20px 10px;
+    }
+    section {
+        padding: 20px;
+    }
+}
